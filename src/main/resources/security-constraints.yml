@@ -1,0 +1,20 @@
+constraints:
+
+##### GENERAL
+  - pattern: /vehicles/**
+    roles:
+      ADMIN:
+      - DELETE
+
+publicConstraints:
+  - pattern: /auth/signin
+    methods:
+      - POST
+
+  - pattern: /vehicles/**
+    methods:
+      - GET
+
+  - pattern: /v1/vehicles/**
+    methods:
+      - GET
